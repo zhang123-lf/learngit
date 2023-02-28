@@ -1,0 +1,31 @@
+Lunix基础操作指令：
+pwd：显示当前所在路径
+ls：查看当前路径下的文件目录
+ls -ah:查看隐藏文件
+mkdir：创建文件夹
+vi：创建并进入子文件
+i：插入模式
+esc：退出插入模式
+:%s/a/b/g：替换（将a替换为b）
+:wq：保存并退出
+cd：进入文件夹
+cd ..：退出上一步
+tar cvf+a(文件名)+.tar(后缀)+A(压缩对象)：压缩文件
+tar xvf+a(需要解压的文件)：解压文件
+rm：删除子文件或压缩包
+rm -r：删除文件夹
+
+git的用户名:zhang123
+git的email:zlf991112@163.com
+
+git init:将目前的目录变成git可以管理的仓库
+git add file.txt（提交文件） ：将要提交的修改提交到暂存区  
+ git commit -m "ok?"（保存快照） ：将暂存区的文件的修改提交的分支
+更改文件后：git status(查看工作区状态)	git diff(查看修改的内容)
+git log （--pretty=oneline） (查看保存的版本)
+当 git log 后出现”：“，无法操作时，按”q"可退出此模式
+git reset --hard HEAD^(返回前一个版本)
+git reset --hard id(id一般时7位，返回某个版本)
+git reset HEAD file.txt:把暂存区的修改退回到工作区，使暂存区干净
+git checkout -- file.txt:放弃工作区的修改，让文件回复到最近的一次 git add 或者git commit 的状态
+git rm file.txt 并且git commit -m "":从文件库中删除该文件
