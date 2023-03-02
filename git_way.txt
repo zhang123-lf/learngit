@@ -1,3 +1,28 @@
+git的用户名:zhang123
+git的email:zlf991112@163.com
+
+git init:将目前的目录变成git可以管理的仓库
+git add file.txt（提交文件） ：将要提交的修改提交到暂存区  
+ git commit -m "ok?"（保存快照） ：将暂存区的文件的修改提交的分支
+更改文件后：git status(查看工作区状态)	git diff(查看修改的内容)
+git log （--pretty=oneline） (查看保存的版本)
+当 git log 后出现”：“，无法操作时，按”q"可退出此模式
+git reset --hard HEAD^(返回前一个版本)
+git reset --hard id(id一般时7位，返回某个版本)
+git reset HEAD file.txt:把暂存区的修改退回到工作区，使暂存区干净
+git checkout -- file.txt:放弃工作区的修改，让文件回复到最近的一次 git add 或者git commit 的状态
+git rm file.txt 并且git commit -m "":从文件库中删除该文件
+
+
+我的添加远程库的方法：
+1.按照github上给的方法（可以直接复制他们的命令代码）：
+		git remote add origin https://github.com/zhang123-lf/learngit.git
+		git branch -M main：这个是修改分支名字，后面可以改回来
+		git push -u origin main:第一次将本地的修改提交到GitHub
+//这里的mian和教程上的master都只是分支的名字可以更改
+2.去GitHub上将main分支名字改成master；在gitbash上输入git branch -M master将本地分支名字改回master
+这样就和廖雪峰上的教程吻合了
+
 Lunix基础操作指令：
 pwd：显示当前所在路径
 ls：查看当前路径下的文件目录
@@ -14,20 +39,3 @@ tar cvf+a(文件名)+.tar(后缀)+A(压缩对象)：压缩文件
 tar xvf+a(需要解压的文件)：解压文件
 rm：删除子文件或压缩包
 rm -r：删除文件夹
-
-git的用户名:zhang123
-git的email:zlf991112@163.com
-
-git init:将目前的目录变成git可以管理的仓库
-git add file.txt（提交文件） ：将要提交的修改提交到暂存区  
- git commit -m "ok?"（保存快照） ：将暂存区的文件的修改提交的分支
-更改文件后：git status(查看工作区状态)	git diff(查看修改的内容)
-git log （--pretty=oneline） (查看保存的版本)
-当 git log 后出现”：“，无法操作时，按”q"可退出此模式
-git reset --hard HEAD^(返回前一个版本)
-git reset --hard id(id一般时7位，返回某个版本)
-git reset HEAD file.txt:把暂存区的修改退回到工作区，使暂存区干净
-git checkout -- file.txt:放弃工作区的修改，让文件回复到最近的一次 git add 或者git commit 的状态
-git rm file.txt 并且git commit -m "":从文件库中删除该文件
-
-git push origin master:将本地的修改提交到GitHub
