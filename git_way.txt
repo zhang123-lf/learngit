@@ -17,11 +17,38 @@ git rm file.txt 并且git commit -m "":从文件库中删除该文件
 我的添加远程库的方法：
 1.按照github上给的方法（可以直接复制他们的命令代码）：
 		git remote add origin https://github.com/zhang123-lf/learngit.git
+		上面也可以换成git remote add origin git@github.com:zhang123-lf/learngit.git
 		git branch -M main：这个是修改分支名字，后面可以改回来
 		git push -u origin main:第一次将本地的修改提交到GitHub
 //这里的mian和教程上的master都只是分支的名字可以更改
 2.去GitHub上将main分支名字改成master；在gitbash上输入git branch -M master将本地分支名字改回master
 这样就和廖雪峰上的教程吻合了
+3.克隆仓库：git clone https://github.com/zhang123-lf/uart-example.git(最好是用种方法来克隆，使用ssh来克隆可能会报错)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Lunix基础操作指令：
 pwd：显示当前所在路径
