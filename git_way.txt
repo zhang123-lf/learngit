@@ -25,9 +25,11 @@ git rm file.txt 并且git commit -m "":从文件库中删除该文件
 这样就和廖雪峰上的教程吻合了
 3.克隆仓库：git clone https://github.com/zhang123-lf/uart-example.git(最好是用种方法来克隆，使用ssh来克隆可能会报错)
 
-
-
-
+git创建和合并分支：
+	git checkout -b dev	(创建dev分支，将HEAD切换到dev分支)
+		相当于”git branch dev	git checkout dev“加上-b参数表示创建并切换
+	git branch	(查看当前分支)
+	
 
 
 
