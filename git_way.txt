@@ -49,7 +49,7 @@ bug分支：
 		git stash apply 或者git stash apply stash@{0}	(恢复stash内容，后者恢复指定的stash)
 		这个恢复stash后，不删除stash内容，需要git stash drop来删除
 		git stash pop	（恢复的同时，把stash内容也删除了）
-				
+		git cherry-pick commit's id   (复制修改)
 
 
 
