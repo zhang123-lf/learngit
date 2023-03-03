@@ -44,6 +44,11 @@ git创建和合并分支：
 		就可以做普通模式合并（git merge --no-ff -m "name" dev），合并后有历史，能看出
 		来做过合并。master应该是非常稳定的，仅用来发布新产品，平时在dev上工作
 bug分支：
+		git stash	(将工作现场储藏起来，此时工作区是干净的)
+		git stash list	  (查看藏起来的工作区)
+		git stash apply 或者git stash apply stash@{0}	(恢复stash内容，后者恢复指定的stash)
+		这个恢复stash后，不删除stash内容，需要git stash drop来删除
+		git stash pop	（恢复的同时，把stash内容也删除了）
 				
 
 
