@@ -1,4 +1,7 @@
 Git is a version control system.
 Git is free software.
+<<<<<<< HEAD
 
-比feature1多了这个
+
+=======
+>>>>>>> featurn1
