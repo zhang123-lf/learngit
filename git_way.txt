@@ -20,19 +20,31 @@ git rm file.txt 并且git commit -m "":从文件库中删除该文件
 		上面也可以换成git remote add origin git@github.com:zhang123-lf/learngit.git
 		git branch -M main：这个是修改分支名字，后面可以改回来
 		git push -u origin main:第一次将本地的修改提交到GitHub
-//这里的mian和教程上的master都只是分支的名字可以更改
+	//这里的mian和教程上的master都只是分支的名字可以更改
 2.去GitHub上将main分支名字改成master；在gitbash上输入git branch -M master将本地分支名字改回master
 这样就和廖雪峰上的教程吻合了
 3.克隆仓库：git clone https://github.com/zhang123-lf/uart-example.git(最好是用种方法来克隆，使用ssh来克隆可能会报错)
 
 git创建和合并分支：
-	git checkout -b dev	(创建dev分支，将HEAD切换到dev分支)
-		相当于”git branch dev	git checkout dev“加上-b参数表示创建并切换
-	git branch	(查看当前分支)
-	
+		git checkout -b dev	(这里也可以使用git switch -c dev/创建dev分支，将HEAD切换到dev分支)
+			相当于”git branch dev	git checkout dev“加上-b参数表示创建并切换
+		git branch	(查看当前分支)	创建切换好分支后可以在此分支提价修改
+		git checkout(这里的checkout可以换成switch）master	(切换回master分支)
+		git merge dev	(将dev的工作成果合并到master分支上)
+		git branch -d dev		(删除dev分支)
 
+解决冲突：
+		当创建了新的分支，并提交了修改后，返回master分支。又在master分支进行了修改并提交，
+		此时，合并分支会发生冲突。输入“git status”打开进行修改的文件，可以知道两个分支的
+		修改，将文件修改并保存提交，如此解决冲突，完成了合并。可以使用git log --graph --pretty=oneline --abbrev-commit
+		查看分支历史。之后删除新分支就行了
 
-
+分支管理策略：
+		使用“git merge”（fast forward）合并就看不出来曾经做过合并。而加上--no-ff参数
+		就可以做普通模式合并（git merge --no-ff -m "name" dev），合并后有历史，能看出
+		来做过合并。master应该是非常稳定的，仅用来发布新产品，平时在dev上工作
+bug分支：
+				
 
 
 
