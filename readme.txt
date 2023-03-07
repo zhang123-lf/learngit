@@ -1,5 +1,5 @@
 Git is a version control system.
-Git is free software.
+Git is free software.11
 ####
 自己和其他已经合并，冲突已解决
 <<<<<<< HEAD
