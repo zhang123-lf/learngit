@@ -14,16 +14,21 @@ git checkout -- file.txt:放弃工作区的修改，让文件回复到最近的一次 git add 或者gi
 git rm file.txt 并且git commit -m "":从文件库中删除该文件
 
 
-我的添加远程库的方法：
-1.按照github上给的方法（可以直接复制他们的命令代码）：
-		git remote add origin https://github.com/zhang123-lf/learngit.git
-		上面也可以换成git remote add origin git@github.com:zhang123-lf/learngit.git
-		git branch -M main：这个是修改分支名字，后面可以改回来
-		git push -u origin main:第一次将本地的修改提交到GitHub
-		之后提交修改只需要输入	git push origin master
-	//这里的mian和教程上的master都只是分支的名字可以更改
-2.去GitHub上将main分支名字改成master；在gitbash上输入git branch -M master将本地分支名字改回master
-这样就和廖雪峰上的教程吻合了
+添加远程库的方法：
+	输入“git remote add origin git@github.com:zhang123-lf/learngit.git”连接远程仓库
+	输入“git push -u origin master”:第一次将本地的修改提交到GitHub
+	这样操作成功的前提是 本地仓库已经提交了东西，不然本地仓库是空的就会报错“error: src refspec master does not match any”
+	之后上传只需要输入“git push origin master”
+					//以下是github官网给的方法，要是按照官网的就按下面的做：
+					1.按照github上给的方法（可以直接复制他们的命令代码）：
+					git remote add origin https://github.com/zhang123-lf/learngit.git
+					上面也可以换成git remote add origin git@github.com:zhang123-lf/learngit.git
+					git branch -M main：这个是修改分支名字，后面可以改回来
+					git push -u origin main:第一次将本地的修改提交到GitHub
+					之后提交修改只需要输入	git push origin master
+					//这里的mian和教程上的master都只是分支的名字可以更改
+					2.去GitHub上将main分支名字改成master；在gitbash上输入git branch -M master将本地分支名字改回master
+					这样就和廖雪峰上的教程吻合了
 3.克隆仓库：git clone https://github.com/zhang123-lf/uart-example.git(最好是用种方法来克隆，使用ssh来克隆可能会报错)
 
 git创建和合并分支：
