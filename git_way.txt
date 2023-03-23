@@ -66,6 +66,7 @@ feature 分支(看情况推送远程)：
 		git remote -v    显示远程库更加详细的信息
 		git push origin dev   推送分支
 		若是自己提交的修改与其他人的冲突，使用	git pull	将其他人的修改抓取下来；
+		如果什么都没有，就使用 git pull origin dev 这样就是把远程仓库新分支的内容抓去下来
 		git pull失败，是因为没有指定本地的dev与远程大的origin/dev的链接，则输入	git branch --set-upstream-to=origin/dev dev
 		
 		多人协作的工作模式通常是这样：
