@@ -1,3 +1,6 @@
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+
 git的用户名:zhang123
 git的email:zlf991112@163.com
 
