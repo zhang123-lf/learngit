@@ -83,9 +83,12 @@ feature 分支(看情况推送远程)：
 
 git rebase:将提交历史变直线，没看懂
 
-
-
-
+打标签：前确保处在你要打标签的分支上,也是打在了你之前commit上面 输入”git tag nameoftag“
+查看标签：输入”git tag“
+给某次commit打上标签，知道它的id后，输入”git tag 标签名 id“(查看id:git log --pretty=oneline --abbrev-commit)
+注意，标签不是按时间顺序列出，而是按字母排序的。可以用git show <tagname>查看标签信息
+还可以创建带有说明的标签，用-a指定标签名，-m指定说明文字：
+git tag -a 标签名 -m "说明文字" commit_ID
 
 
 
