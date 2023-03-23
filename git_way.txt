@@ -38,7 +38,8 @@ git创建和合并分支：
 		git checkout(这里的checkout可以换成switch）master	(切换回master分支)
 		git merge dev	(将dev的工作成果合并到master分支上)
 		git branch -d dev		(删除dev分支)
-
+删除远程仓库的分支：
+			git push origin --delete remoteBranchName
 解决冲突：
 		当创建了新的分支，并提交了修改后，返回master分支。又在master分支进行了修改并提交，
 		此时，合并分支会发生冲突。输入“git status”打开进行修改的文件，可以知道两个分支的
