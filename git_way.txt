@@ -6,10 +6,12 @@ git的email:zlf991112@163.com
 
 git init:将目前的目录变成git可以管理的仓库
 git add file.txt（提交文件） ：将要提交的修改提交到暂存区  
+git add --all:提交所有修改，包括删除，重命名等
+git add . :提交新文件（new）和被修改（modified）文件，不包括被删除（deleted）文件
  git commit -m "ok?"（保存快照） ：将暂存区的文件的修改提交的分支
 更改文件后：git status(查看工作区状态)	git diff(查看修改的内容)
 git log （--pretty=oneline） (查看保存的版本)
-当 git log 后出现”：“，无法操作时，按”q"可退出此模式
+当 git log 后出现”:q：“，无法操作时，按”q"可退出此模式
 git reset --hard HEAD^(返回前一个版本)
 git reset --hard id(id一般时7位，返回某个版本)
 git reset HEAD file.txt:把暂存区的修改退回到工作区，使暂存区干净
