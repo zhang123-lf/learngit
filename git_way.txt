@@ -1,7 +1,7 @@
 git config --global user.name "Your Name"
 git config --global user.email "email@example.com"
 
-git的用户名:zhang123
+git的用户名:zhanglinfeng
 git的email:zlf991112@163.com
 
 git init:将目前的目录变成git可以管理的仓库
@@ -40,7 +40,7 @@ git创建和合并分支：
 		git checkout -b dev	(这里也可以使用git switch -c dev/创建dev分支，将HEAD切换到dev分支)
 			相当于”git branch dev	git checkout dev“加上-b参数表示创建并切换
 		git branch	(查看当前分支)	创建切换好分支后可以在此分支提价修改
-		git checkout(这里的checkout可以换成switch）master	(切换回master分支)
+		git checkout（这里的checkout可以换成switch）master	(切换回master分支)
 		git merge dev	(将dev的工作成果合并到master分支上)
 		git branch -d dev		(删除dev分支)
 删除远程仓库的分支：
